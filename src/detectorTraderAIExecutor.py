@@ -67,7 +67,7 @@ GAIN_AMOUNT_THRESHOLD = 100.0 # 100 $
 GAIN_AMOUNT_MIN_THRESHOLD = 3.0
 COIN_PRICE_FLOAT_RESOLUTION = 2
 
-OPERATIONAL_MODE = False # True == real Trade  | False == Test mode
+OPERATIONAL_MODE = True # True == real Trade  | False == Test mode
 LOG_MODE = False # True == log to log files
 
 ########################################################################################
