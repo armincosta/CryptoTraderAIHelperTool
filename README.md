@@ -1,9 +1,9 @@
-   ################################################################################################
-                                            Software
+##########################################################################
+                                  Software
                                       
-                                        ##CryptoTraderAIHelperTool
+                           CryptoTraderAIHelperTool
                                         
-                                   A small Crypto Trading utility tool
+                      A tiny useful Crypto Trading utility tool
    
 
 
@@ -19,7 +19,7 @@
  
  SEE contact e-mail: info@seesolutions.it
 
-####################################################################################################
+##########################################################################
 
 Python code file: detectorTraderAIExecutor.py
 
