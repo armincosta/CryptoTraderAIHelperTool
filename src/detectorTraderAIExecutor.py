@@ -8,7 +8,9 @@
 # Software provided by SEESolutions.it
 # copyright(c) 2022 - 2025
 #
-# License (MIT) https://opensource.org/licenses/MIT
+# License (Creative Commons Attribution-ShareAlike 4.0 International Public License)
+# 
+# License ref: https://creativecommons.org/licenses/by-sa/4.0/legalcode
 #
 # Author: Armin Costa (armincostaAThotmail.com) 
 # 
@@ -925,18 +927,18 @@ if __name__ == '__main__':
         TIME_INTERVAL_SLEEP = int(sys.argv[7])
         GAIN_AMOUNT_THRESHOLD = float(sys.argv[8])
 
-        print("###############################################")
+        print("###################################################")
         print("")
-        print("          CryptoTraderAIHelperTool             ")
+        print("          CryptoTraderAIHelperTool                ")
         print("")
-        print(" provided by SEESolutions.it                   ")
-        print(" copyright(c) 2022 - 2025                      ")       
+        print(" provided by SEESolutions.it                      ")
+        print(" copyright(c) 2022 - 2025                         ")       
         print("")
-        print(" License MIT                                   ")
+        print(" License License (CC BY-SA Attribution-ShareAlike ")
         print("")
-        print(" Author: A.Costa                               ")
+        print(" Author: A.Costa                                  ")
         print("")
-        print("###############################################")
+        print("##################################################")
         print("")
         print("init() client...")
 
