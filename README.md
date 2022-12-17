@@ -57,8 +57,14 @@ Contact: SEE Solutions e-mail: info@seesolutions.it
 # How to Run
  
 
+Run the Trade ONCE in BUYFASTMODE with coin-pair SNMBUSD with the amount of 3000 BUSD with a initial Stop Limit set to 3.0 % below the buy price, the Trade monitoring iterates at 0 seconds Time intervals (-1 are not used params)
+ 
 
- Run the Trade ONCE in BUYFASTMODE with coin-pair SNMBUSD with the amount of 3000 BUSD
+Example:
+ 
+```
+python detectorTraderAIExecutor.py ONCE BUYFAST SNMBUSD 3000 3.0 -1 0 -1
+```
  
 Parameter syntax:
 
@@ -66,21 +72,11 @@ Parameter syntax:
  python detectorTraderAIExecutor.py %MODE% %BUYPARAM% %YourCoin%%TradingPair% %AmountToSpend% %StartStopLimitPercentThreshold% %StopLimitIncrementPercentThreshold% %TimerInterval% %TakeProfitAmount%
 ```
 
-Example:
- 
-```
-python detectorTraderAIExecutor.py ONCE BUYFAST SNMBUSD 3000 3.0 3.5 0 -1
-```
- 
 
-
-
-
-
-#Contribution for further development
+Your free Contribution for further development of this Tool if you like it:
  
  
-  If you find this Tool helpful to gain some nice $%$ profits while doing your trades and want to contribute to further development, please feel free to send small portion you gained with this tool to one of these crypto addresses:
+  If you find this Tool helpful to gain some nice $%$ profit$ while doing your trades and want to contribute to further development, please feel free to send small portion you gained with this tool to one of these crypto addresses:
  
  BUSD (BNB smart chain BEP20): 0x35372ea66892ed35109fb381caa88b7fed75e4b2
  
