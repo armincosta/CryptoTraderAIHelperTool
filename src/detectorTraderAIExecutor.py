@@ -8,13 +8,17 @@
 # Software provided by SEESolutions.it
 # copyright(c) 2022 - 2025
 #
-# License (Creative Commons Attribution-ShareAlike 4.0 International Public License)
+# Author: 
+# Armin Costa (armincostaAThotmail.com) 
 # 
-# License ref: https://creativecommons.org/licenses/by-sa/4.0/legalcode
+# SEE contact e-mail: 
+# info@seesolutions.it
 #
-# Author: Armin Costa (armincostaAThotmail.com) 
-# 
-# SEE contact e-mail: info@seesolutions.it
+# Software License (Creative Commons Attribution-ShareAlike 4.0 International Public License)
+# See LICENSE_CreativeCommons_CC-SA license file
+#
+# License ref: 
+# https://creativecommons.org/licenses/by-sa/4.0/legalcode
 #
 ####################################################################################################
 #
@@ -29,6 +33,7 @@
 # ETH (Ethereum ERC20): 0x35372ea66892ed35109fb381caa88b7fed75e4b2
 # BNB (BSC chain): 0x35372ea66892ed35109fb381caa88b7fed75e4b2
 # 
+#
 import sys
 import threading
 from threading import Thread
