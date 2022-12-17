@@ -1,10 +1,10 @@
-##########################################################################
+####################################################
 
-                                  Software
+                       Software
                                       
-                           CryptoTraderAIHelperTool
+               CryptoTraderAIHelperTool
                                         
-                      A tiny useful Crypto Trading utility tool
+       A tiny helpful Crypto Trading utility Tool
    
 
 
@@ -12,20 +12,21 @@
 
  Software provided by SEESolutions.it
  copyright(c) 2022 - 2025
-
- License (Creative Commons Attribution-ShareAlike 4.0 International Public License)
+ Author: Armin Costa (armincostaAThotmail.com)
  
- License ref: https://creativecommons.org/licenses/by-sa/4.0/legalcode
-
-
- Author: Armin Costa (armincostaAThotmail.com) 
+ #License:
+  Creative Commons Attribution-ShareAlike 4.0 International Public License (CC-SA)
  
- SEE Solutions contact e-mail: info@seesolutions.it
+  License ref: https://creativecommons.org/licenses/by-sa/4.0/legalcode
 
-##########################################################################
+ 
+ #Contact 
+  SEE Solutions e-mail: info@seesolutions.it
 
 
-Python code file: detectorTraderAIExecutor.py
+####################################################
+
+Main Python code file: ./src/detectorTraderAIExecutor.py
 
 
 
