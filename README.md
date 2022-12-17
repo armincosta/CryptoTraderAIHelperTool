@@ -37,24 +37,69 @@ Contact: SEE Solutions e-mail: info@seesolutions.it
 
 # Intro
 
- Helper Tool software that aims to be helpful for trading on Binance Crypto Exchange.
- Particularly useful in case of pumps or longer price increase time periods.
+ Helper Tool software that aims to be helpful for aiding trading on Binance Crypto Exchange.
+
+ It's particularly useful in case of small and big pumps or longer price increase time periods. If you
+
+catch the momentum with the proper configurations you may lean back and see your $ growing without 
+
+stressing yourself.
  
 
-# Introduction
+# Description
  
- small intro
+This small crypto trading helper Tool with a set of functionalities for improving and supporting your trading activity. It consists of a python code script that can be run in a commandd shell with a set of defined configurable parameters. The tool allows to make BUYs and SELLs in automatic way while constantly monitoring the token price being traded. Stop Limits for SELLs are automatically set and are incremental according to growing or downing price levels. It simplyfies buying and selling your favorite token. Especially helpful in cases of big and instant price increases or constant price increases over longer time periods.
  
  
 # How it Works
+
+
  
 # Prerequisites:
+
+
 
 # How to Install
  
  
 # Run Parameter Syntax
+
+The following parameters can be set according to your strategy
+
+
+MODE: 
+
+Can be ONCE or in LOOP
+
+BUYPARAM:
+
+BUYNOW (buy coin immediately) or BUYLOW (buy at low price curve) or BUYFAST (faster and simpler execution, ideal for big pumps)
+
+COIN_NAME_TO_TRADE:
+
+Coin pair to trade, with the following syntax %TokenName%%TradingPair% (ex. SNMUSDT)
+
+MAX_AMOUNT_BUY:
+
+Amount you want to spend for the current trande (according to the token trading pair you choose (Ex. 1000 USDT)
+
+
+STOP_LIMIT_SELL_THRESHOLD_PARAM:
+
+STOP_LIMIT_INCREASE_PERC_PARAM:
+
+TIME_INTERVAL_SLEEP:
+
+GAIN_AMOUNT_THRESHOLD:
+
+OPERATIONAL_MODE = True # True == real Trade  | False == Test mode
+LOG_MODE = False # True == log to log files
+
  
+ ```
+ python detectorTraderAIExecutor.py %MODE% %BUYPARAM% %COIN_NAME_TO_TRADE% %MAX_AMOUNT_BUY% %STOP_LIMIT_SELL_THRESHOLD_PARAM% %STOP_LIMIT_INCREASE_PERC_PARAM% %TIME_INTERVAL_SLEEP% %GAIN_AMOUNT_THRESHOLD%
+```
+
  
 # How to Run the software
  
@@ -73,7 +118,7 @@ python detectorTraderAIExecutor.py ONCE BUYFAST SNMBUSD 3000 3.0 -1 0 -1
 Parameter syntax:
 
 ```
- python detectorTraderAIExecutor.py %MODE% %BUYPARAM% %YourCoin%%TradingPair% %AmountToSpend% %StartStopLimitPercentThreshold% %StopLimitIncrementPercentThreshold% %TimerInterval% %TakeProfitAmount%
+ python detectorTraderAIExecutor.py %MODE% %BUYPARAM% %YourCoin%%TradingPair% %AmountToSpend% %StartStopLimitPercentThreshold% %StopLimitIncrementPercentThreshold% %MonitoringTimerInterval% %TakeProfitAmount%
 ```
 
 
@@ -81,6 +126,7 @@ Your free and precious Contribution for further development of this Tool IF you 
  
 
  If you find this trading utility Tool helpful to gain some nice $%$ profit$ while doing your trades and want to contribute to further development, improvements and fixes, please feel FREE to send some tiny amount of crypto you gained with this tool to one of these addresses:
+ 
  
  BUSD (BNB smart chain BEP20): 0x35372ea66892ed35109fb381caa88b7fed75e4b2
  
