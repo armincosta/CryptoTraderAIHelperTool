@@ -83,7 +83,6 @@ MAX_AMOUNT_BUY:
 
 Amount you want to spend for the current trande (according to the token trading pair you choose (Ex. 1000 USDT)
 
-
 STOP_LIMIT_SELL_THRESHOLD_PARAM:
 
 STOP_LIMIT_INCREASE_PERC_PARAM:
@@ -95,18 +94,18 @@ GAIN_AMOUNT_THRESHOLD:
 OPERATIONAL_MODE = True # True == real Trade  | False == Test mode
 LOG_MODE = False # True == log to log files
 
- 
+ Example:
  ```
  python detectorTraderAIExecutor.py %MODE% %BUYPARAM% %COIN_NAME_TO_TRADE% %MAX_AMOUNT_BUY% %STOP_LIMIT_SELL_THRESHOLD_PARAM% %STOP_LIMIT_INCREASE_PERC_PARAM% %TIME_INTERVAL_SLEEP% %GAIN_AMOUNT_THRESHOLD%
 ```
 
  
-# How to Run the software
+# How to Run the software in different MODEs
  
 Cases:
 
 1)
-Run a Trade ONCE in BUYFASTMODE with coin-pair SNMBUSD with the amount of 3000 BUSD with a initial Stop Limit set to 3.0 % below the buy price, the Trade monitoring iterates at 0 seconds Time intervals (-1 are not used params)
+Run a Trade ONCE in BUYFAST MODE on COIN_NAME_TO_TRADE SNMBUSD with the MAX_AMOUNT_BUY of 3000 BUSD with a initial STOP_LIMIT_SELL_THRESHOLD_PARAM set to 3.0 % below the buy price, the Trade monitoring iterates at 0 seconds TIME_INTERVAL_SLEEP (-1 are unused params)
  
 
 Example:
@@ -118,11 +117,12 @@ python detectorTraderAIExecutor.py ONCE BUYFAST SNMBUSD 3000 3.0 -1 0 -1
 Parameter syntax:
 
 ```
- python detectorTraderAIExecutor.py %MODE% %BUYPARAM% %YourCoin%%TradingPair% %AmountToSpend% %StartStopLimitPercentThreshold% %StopLimitIncrementPercentThreshold% %MonitoringTimerInterval% %TakeProfitAmount%
+python detectorTraderAIExecutor.py %MODE% %BUYPARAM% %COIN_NAME_TO_TRADE% %MAX_AMOUNT_BUY% %STOP_LIMIT_SELL_THRESHOLD_PARAM% %STOP_LIMIT_INCREASE_PERC_PARAM% %TIME_INTERVAL_SLEEP% %GAIN_AMOUNT_THRESHOLD%
 ```
 
+Contribution for new and enhanced functionalities:
 
-Your free and precious Contribution for further development of this Tool IF you like it and use it:
+Your free and precious contribution for further development of this Tool IF you like it and use it:
  
 
  If you find this trading utility Tool helpful to gain some nice $%$ profit$ while doing your trades and want to contribute to further development, improvements and fixes, please feel FREE to send some tiny amount of crypto you gained with this tool to one of these addresses:
