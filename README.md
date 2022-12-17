@@ -28,9 +28,7 @@
 Author: Armin Costa (admincostaAThotmail.com)
 
 
-Contact:
-
-  SEE Solutions e-mail: info@seesolutions.it
+Contact: SEE Solutions e-mail: info@seesolutions.it
 
 
 ####################################################
