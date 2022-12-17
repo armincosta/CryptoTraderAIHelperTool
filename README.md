@@ -7,26 +7,29 @@
        A tiny helpful Crypto Trading utility Tool
    
 
+####################################################
 
 
 
  Software provided by SEESolutions.it
  copyright(c) 2022 - 2025
+
  Author: Armin Costa (armincostaAThotmail.com)
  
  #License:
+
   Creative Commons Attribution-ShareAlike 4.0 International Public License (CC-SA)
  
   License ref: https://creativecommons.org/licenses/by-sa/4.0/legalcode
 
  
- #Contact 
+ #Contact
+
   SEE Solutions e-mail: info@seesolutions.it
 
 
-####################################################
 
-Main Python code file: ./src/detectorTraderAIExecutor.py
+####################################################
 
 
 
