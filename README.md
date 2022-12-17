@@ -57,15 +57,20 @@ Contact: SEE Solutions e-mail: info@seesolutions.it
 # How to Run
  
 
-##Parameter syntax
- python3.6 detectorTraderAIExecutor.py %MODE% %BUYPARAM% %YourCoin%%TradingPair% %AmountToSpend% %StartStopLimitPercentThreshold% %StopLimitIncrementPercentThreshold% %TimerInterval% %TakeProfitAmount%
 
-##Example:
+ Run the Trade ONCE in BUYFASTMODE with coin-pair SNMBUSD with the amount of 3000 BUSD
+ 
+Parameter syntax:
 
- Run the Trade ONCE in BUYFASTMODE with coin-pair SNMBUSD with the amount of 3000 BUSD 
-  ´´´
-  python3.6 detectorTraderAIExecutor.py ONCE BUYFAST SNMBUSD 3000 3.0 3.5 0 -1
-  ´´´
+```
+ python detectorTraderAIExecutor.py %MODE% %BUYPARAM% %YourCoin%%TradingPair% %AmountToSpend% %StartStopLimitPercentThreshold% %StopLimitIncrementPercentThreshold% %TimerInterval% %TakeProfitAmount%
+```
+
+Example:
+ 
+```
+python detectorTraderAIExecutor.py ONCE BUYFAST SNMBUSD 3000 3.0 3.5 0 -1
+```
  
 
 
