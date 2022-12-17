@@ -1,10 +1,10 @@
 ####################################################
 
-                       Software
+                   Software
                                       
-               CryptoTraderAIHelperTool
+           CryptoTraderAIHelperTool
                                         
-       A tiny helpful Crypto Trading utility Tool
+   A tiny helpful Crypto Trading utility helper Tool
    
 
 ####################################################
