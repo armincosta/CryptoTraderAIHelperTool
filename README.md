@@ -2,7 +2,7 @@
 
                    Software
                                       
-           CryptoTraderAIHelperTool
+           CryptoTraderAIHelperTool V1.0
                                         
    A tiny helpful Crypto Trading utility helper Tool
    
