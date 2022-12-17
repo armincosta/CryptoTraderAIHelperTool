@@ -10,12 +10,12 @@
 ####################################################
 
 
-
  Software provided by SEESolutions.it
+ 
  copyright(c) 2022 - 2025
 
  
-#License:
+ Software License:
 
   Creative Commons Attribution-ShareAlike 4.0 International Public License (CC-SA)
 
@@ -25,12 +25,10 @@
   https://creativecommons.org/licenses/by-sa/4.0/legalcode
 
 
-#Author:
-
-Armin Costa (admincostaAThotmail.com)
+Author: Armin Costa (admincostaAThotmail.com)
 
 
-#Contact
+Contact:
 
   SEE Solutions e-mail: info@seesolutions.it
 
@@ -73,7 +71,11 @@ Armin Costa (admincostaAThotmail.com)
  
 
 
-# Contribution for further development
+
+
+
+#Contribution for further development
+ 
  
   If you find this Tool helpful to gain some nice $%$ profits while doing your trades and want to contribute to further development, please feel free to send small portion you gained with this tool to one of these crypto addresses:
  
@@ -88,7 +90,7 @@ Armin Costa (admincostaAThotmail.com)
  USDT (Ethereum ERC20): 0x35372ea66892ed35109fb381caa88b7fed75e4b2
  
  
- THANKS a lot you will not regret for further improvements and functionalities
+ THANKS a LOT and God beless you, you will not regret for getting further improvements and functionalities for your Trades
  
 
  
