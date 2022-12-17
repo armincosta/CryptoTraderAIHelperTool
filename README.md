@@ -24,36 +24,58 @@
 
 ##########################################################################
 
+
 Python code file: detectorTraderAIExecutor.py
+
+
 
 # Intro
 
  Helper Tool software that aims to be helpful for trading on Binance. Particularly useful for pumps
  
 
-         
  # Introduction
  
  small intro
  
- # Description
  
- # How to run
- 
- # Parameter description
+ # How it Works
  
  
-  If you find this Tool helpful to gain some profits while doing trades and want to contribute to further development, please feel free to send something to these crypto addresses:
- 
- BTC (Bitcoin): 1K1PHeqiUFoQ6Yp8mNP6u2sZR7R23QnffQ
- ETH (Ethereum ERC20): 0x35372ea66892ed35109fb381caa88b7fed75e4b2
- BNB (BSC chain): 0x35372ea66892ed35109fb381caa88b7fed75e4b2
+ # How to Install
  
  
-     .'/  ,_   \'.
+ # Run parameter description
+ 
+ 
+ # How to Run
+ 
+ 
+ 
+ # Contribution for further development
+ 
+  If you find this Tool helpful to gain some profits while doing trades and want to contribute to further development, please feel free to send something you gained to these crypto addresses:
+ 
+ BUSD (BNB smart chain BEP20): 0x35372ea66892ed35109fb381caa88b7fed75e4b2
+ 
+ BTC (Bitcoin):          1K1PHeqiUFoQ6Yp8mNP6u2sZR7R23QnffQ
+ 
+ ETH (Ethereum ERC20):   0x35372ea66892ed35109fb381caa88b7fed75e4b2
+ 
+ BNB (BNB smart chain BEP20):        0x35372ea66892ed35109fb381caa88b7fed75e4b2
+ 
+ USDT (Ethereum ERC20): 0x35372ea66892ed35109fb381caa88b7fed75e4b2
+ 
+ 
+ THANKS a lot you will not regret for further improvements and functionalities
+ 
+ 
+    .'/  ,_   \'.
    |  \__( >__/  |
    \             /
     '-..__ __..-'
          /_\
-         
+ 
+ 
 Phoenix
+
