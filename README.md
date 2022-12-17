@@ -14,19 +14,25 @@
  Software provided by SEESolutions.it
  copyright(c) 2022 - 2025
 
- Author: Armin Costa (armincostaAThotmail.com)
  
- #License:
+#License:
 
   Creative Commons Attribution-ShareAlike 4.0 International Public License (CC-SA)
- 
-  License ref: https://creativecommons.org/licenses/by-sa/4.0/legalcode
 
- 
- #Contact
+  See LICENSE_CreativeCommons_CC-SA license and LICENSE_DISCLAIMER files for detailed terms
+
+  CreativeCommons License ref: 
+  https://creativecommons.org/licenses/by-sa/4.0/legalcode
+
+
+#Author:
+
+Armin Costa (admincostaAThotmail.com)
+
+
+#Contact
 
   SEE Solutions e-mail: info@seesolutions.it
-
 
 
 ####################################################
@@ -38,27 +44,27 @@
  Helper Tool software that aims to be helpful for trading on Binance. Particularly useful for pumps
  
 
- # Introduction
+# Introduction
  
  small intro
  
  
- # How it Works
+# How it Works
  
  
- # How to Install
+# How to Install
  
  
- # Run parameter description
+# Run parameter description
  
  
- # How to Run
+# How to Run
  
 
- ##Parameter syntax
+##Parameter syntax
  python3.6 detectorTraderAIExecutor.py %MODE% %BUYPARAM% %YourCoin%%TradingPair% %AmountToSpend% %StartStopLimitPercentThreshold% %StopLimitIncrementPercentThreshold% %TimerInterval% %TakeProfitAmount%
 
- ##Example:
+##Example:
 
  Run the Trade ONCE in BUYFASTMODE with coin-pair SNMBUSD with the amount of 3000 BUSD 
   ´´´
@@ -67,7 +73,7 @@
  
 
 
- # Contribution for further development
+# Contribution for further development
  
   If you find this Tool helpful to gain some nice $%$ profits while doing your trades and want to contribute to further development, please feel free to send small portion you gained with this tool to one of these crypto addresses:
  
@@ -95,3 +101,5 @@
  
 Your Phoenix
 A.C
+
+
