@@ -14,8 +14,11 @@
  
  copyright(c) 2022 - 2025
 
+ Author: Armin Costa (admincostaAThotmail.com)
+
+
  
- Software License:
+Software License:
 
   Creative Commons Attribution-ShareAlike 4.0 International Public License (CC-SA)
 
@@ -24,8 +27,6 @@
   CreativeCommons License ref: 
   https://creativecommons.org/licenses/by-sa/4.0/legalcode
 
-
-Author: Armin Costa (admincostaAThotmail.com)
 
 
 Contact: SEE Solutions e-mail: info@seesolutions.it
@@ -57,10 +58,16 @@ This small crypto trading helper Tool with a set of functionalities for improvin
  
 # Prerequisites:
 
+Python Version > 3
+
+Dependencies:
+- numpy
+- Python Binance API (ttps://github.com/sammchardy/python-binance)
 
 
 # How to Install
  
+
  
 # Run Parameter Syntax
 
