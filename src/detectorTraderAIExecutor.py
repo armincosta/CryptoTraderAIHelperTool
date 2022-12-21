@@ -976,7 +976,7 @@ if __name__ == '__main__':
         			if(path.exists(BUY_CMD_FILE)):
         				printMsg("bying coin at price " + str(coin_price))
         				buy_order_coin_fast(COIN_NAME_TO_TRADE, MAX_AMOUNT_BUY, OPERATIONAL_MODE)
-        				printMsg("buy successuflly")
+        				printMsg("buy successfully")
         				if(STOP_LIMIT_SELL_THRESHOLD != -1):
         					updateSell_STOP_LIMIT(COIN_NAME_TO_TRADE, coin_price, STOP_LIMIT_SELL_THRESHOLD)
         				coinAvailable = True
@@ -1024,7 +1024,7 @@ if __name__ == '__main__':
         					coinSell = True
         					printMsg("---------------------------------------------------------------------------")
         					printMsg("Sell CMD detected...selling coin...")
-        					printMsg("getting previews stop limit order...")
+        					printMsg("getting preview stop limit order...")
         					prev_sell_order = Buy_Order_List_Executed.get_val(COIN_NAME_TO_TRADE + "_sell")
         					if(prev_sell_order == "No record found"):
         						printMsg("No record found")
@@ -1041,8 +1041,8 @@ if __name__ == '__main__':
         					coin_price_diff = float(sell_price_list_str) - float(buy_price_list_str)
         					coind_gain = coin_price_diff * (MAX_AMOUNT_BUY / buy_price_list_str)
         					printMsg("******************************************************************************")
-        					printMsg("SELL successuflly " + str(current_coin_balance_int) + " at Price " + str(sell_price_list_str) + "  GAIN: " + str(coin_gain))
-        					printMsg("writing gains...")
+        					printMsg("SELL successfully " + str(current_coin_balance_int) + " at Price " + str(sell_price_list_str) + "  GAIN: " + str(coin_gain))
+        					printMsg("writing gains to GAINS.csv file....")
         					calculateGains(COIN_NAME_TO_TRADE)
         					printMsg("-----------------------------------------------------------------------------")
         					try:
@@ -1068,14 +1068,14 @@ if __name__ == '__main__':
 
         # getting coin info
         coin_info = client.get_symbol_info(COIN_NAME_TO_TRADE)
-        print("coin_info: " + str(coin_info))
+        print("Coin info: " + str(coin_info))
 
         coin_price_str = str(coin_price)
         coin_decimals = coin_price_str[::-1].find('.')
         COIN_PRICE_FLOAT_RESOLUTION = int(coin_decimals)
 
-        print("coin price: " + str(coin_price))
-        print("coin decimals: " + str(coin_decimals))
+        print("Price: " + str(coin_price))
+        print("price decimals: " + str(coin_decimals))
         print("")
         print("Parameters->")
         print("")
