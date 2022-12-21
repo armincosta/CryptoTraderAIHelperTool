@@ -11,14 +11,15 @@
 # Author: 
 # Armin Costa (armincostaAThotmail.com) 
 # 
-# SEE contact e-mail: 
+# SEE Solutions contact e-mail: 
 # info@seesolutions.it
 #
-# Software License (Creative Commons Attribution-ShareAlike 4.0 International Public License)
-# See LICENSE_CreativeCommons_CC-SA license file
+# Software License:
+# (Creative Commons Attribution-ShareAlike 4.0 International Public License)
+#  See LICENSE_CreativeCommons_CC-SA license file
 #
-# License ref: 
-# https://creativecommons.org/licenses/by-sa/4.0/legalcode
+#  License ref: 
+#  https://creativecommons.org/licenses/by-sa/4.0/legalcode
 #
 ####################################################################################################
 #
@@ -72,7 +73,7 @@ GAIN_AMOUNT_THRESHOLD = 100.0 # 100 $
 GAIN_AMOUNT_MIN_THRESHOLD = 3.0
 COIN_PRICE_FLOAT_RESOLUTION = 2
 
-OPERATIONAL_MODE = True # True == real Trade  | False == Test mode
+OPERATIONAL_MODE = False # True == real Trade  | False == Test mode
 LOG_MODE = False # True == log to log files
 
 ########################################################################################
@@ -730,7 +731,7 @@ def trade_execution():
 			printMsg("")
 			printMsg("stop limit price: " + str(stoplimit_price_last_float))
 			printMsg("")
-			printMsg("Trend: " + str(trend_list_result))
+			printMsg("Curve Trend: " + str(trend_list_result))
 			printMsg("")
 
 			# real gaicumulative_price_increasen with current price
@@ -838,7 +839,7 @@ def trade_execution():
 				printMsg("SELL command detected...")
 				prev_sell_order = Buy_Order_List_Executed.get_val(coin_name + "_sell")
 
-				printMsg("getting previews stop limit order...")
+				printMsg("getting preview stop limit order...")
 				if(prev_sell_order == "No record found"):
 					printMsg("No record found")
 				else:
@@ -854,7 +855,7 @@ def trade_execution():
 
 				printMsg("selling quantity: " + str(quantity_to_sell))
 				if(sell_order_coin(coin_name, quantity_to_sell, OPERATIONAL_MODE)):
-					printMsg("Sell issued successfully...")
+					printMsg("SELL executed successfully...")
 					printMsg("")
 					printMsg("removing cmds...")
 
@@ -939,9 +940,10 @@ if __name__ == '__main__':
         print(" provided by SEESolutions.it                      ")
         print(" copyright(c) 2022 - 2025                         ")       
         print("")
-        print(" License License (CC BY-SA Attribution-ShareAlike ")
-        print("")
         print(" Author: A.Costa                                  ")
+        print("")
+        print(" License:                                         ")
+        print(" CreativeCommons (CC BY-SA Attribution-ShareAlike ")
         print("")
         print("##################################################")
         print("")
