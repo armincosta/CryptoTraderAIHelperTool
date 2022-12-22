@@ -44,17 +44,38 @@ Contact: SEE Solutions e-mail: info@seesolutions.it
 
 catch the momentum with the proper configurations you may lean back and see your $ growing without 
 
-stressing yourself.
+caring too much.
  
 
 # Description
  
-This small crypto trading helper Tool with a set of functionalities for improving and supporting your trading activity. It consists of a python code script that can be run in a commandd shell with a set of defined configurable parameters. The tool allows to make BUYs and SELLs in automatic way while constantly monitoring the token price being traded. Stop Limits for SELLs are automatically set and are incremental according to growing or downing price levels. It simplyfies buying and selling your favorite token. Especially helpful in cases of big and instant price increases or constant price increases over longer time periods.
+This small crypto trading helper Tool set comes with some functionalities for improving and supporting your trading activity. It consists of multiple python code scripts that can be run in a commandd shell with defined configurable parameters. The tool allows to make BUYs and SELLs in automatic way while constantly monitoring the price. Stop Limits for SELLs are automatically set and are incremental according to growing or downing price levels. It simplyfies buying and selling your favorite crypto token. It is very helpful in cases of big and instant price increases or constant slow price increases over longer time periods.
  
+# Functionalities
+
+BUYNOW:
+
+Make an instant BUY and set a starting STOP LIMIT at a configurable threshold below the price level.
+Monitor constantly the price and as the price level increases or decreases adjust the configured STOP LIMIT increase threshold.
+When a SELL Command is executed by the user, the stop limits are cancelled and a SELL at market price or desired price is executed.
+
+This can be done ONCE or in an iterated LOOP
+
+!BUYNOW:
+
+Calculate the price curve in a given time interval and detect the best BUY moment. STOP LIMITS are set and updated incrementally according to the 
+configured thresholds (%). A SELL can occur automatically via executed stop limits or at a configurable amount gained. 
+
+MODE:
+
+Can be a one iteration trade (ONCE) or multiple trades iterated continuously (LOOP)
  
+
 # How it Works
 
-
+When a trade is executed (BUY), the price is monitored continuously at a given time interval.
+STOP LIMIT SELLs are set and incremented or decremented automatically according to configurable
+thresholds expressed in percentage (%) of the price level 
  
 # Prerequisites:
 
