@@ -73,7 +73,7 @@ GAIN_AMOUNT_THRESHOLD = 100.0 # 100 $
 GAIN_AMOUNT_MIN_THRESHOLD = 3.0
 COIN_PRICE_FLOAT_RESOLUTION = 2
 
-OPERATIONAL_MODE = False # True == real Trade  | False == Test mode
+OPERATIONAL_MODE = True # True == real Trade  | False == Test mode
 LOG_MODE = False # True == log to log files
 
 ########################################################################################
@@ -445,7 +445,7 @@ def updateSell_STOP_LIMIT(coin_name, price_level, stop_limit_threshold):
 		printMsg("affordable loss amount: " + str(affordable_loss_amount_price_buy)) 
 		stop_price = price_level + affordable_loss_amount_price_buy
 		limit_price_slice = (affordable_loss_amount_price_buy * STOP_LIMIT_SLICE) / 100 
-		limit_price = stop_price - limit_price_slice
+		limit_price = stop_price + limit_price_slice
 
 	stop_price = round(stop_price, COIN_PRICE_FLOAT_RESOLUTION)
 	limit_price = round(limit_price, COIN_PRICE_FLOAT_RESOLUTION)
