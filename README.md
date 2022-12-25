@@ -4,7 +4,7 @@
                                       
            CryptoTraderAIHelperTool V1.0
                                         
-   A tiny helpful Crypto Trading utility helper Tool
+   A tiny helpful Crypto Trading utility Tool
    
 
 ####################################################
@@ -38,22 +38,22 @@ Contact: SEE Solutions e-mail: info@seesolutions.it
 
 # Intro
 
- Helper Tool software that aims to be helpful for aiding trading on Binance Crypto Exchange.
+ Helper Tool software that aims to be useful for aiding trading on Binance Crypto Exchange.
 
  It's particularly useful in case of small and big pumps or longer price increase time periods. If you
 
-catch the momentum with the proper configurations you may lean back and see your $ growing without 
+ catch the momentum with the proper configurations you may lean back and see your $ growing without 
 
-caring too much.
+ caring too much.
  
 
 # Description
  
-This small crypto trading helper Tool set comes with some functionalities for improving and supporting your trading activity. It consists of multiple python code scripts that can be run in a commandd shell with defined configurable parameters. The tool allows to make BUYs and SELLs in automatic way while constantly monitoring the price. Stop Limits for SELLs are automatically set and are incremental according to growing or downing price levels. It simplyfies buying and selling your favorite crypto token. It is very helpful in cases of big and instant price increases or constant slow price increases over longer time periods.
+This small crypto trading helper Tool set comes with some functionalities for improving and supporting your trading activity. It consists of python code scripts that can be run in a commandd shell with defined configurable parameters. The tool allows to make BUYs and SELLs in automatic way while constantly monitoring the price. Stop Limits for SELLs are automatically set and are incremental according to growing or downing price levels. It simplyfies buying and selling your favorite crypto token. It is very helpful in cases of big and instant price increases or constant slow price increases over longer time periods.
  
 # Functionalities
 
-BUYNOW:
+**BUYNOW:**
 
 Make an instant BUY and set a starting STOP LIMIT at a configurable threshold below the price level.
 Monitor constantly the price and as the price level increases or decreases adjust the configured STOP LIMIT increase threshold.
@@ -61,14 +61,15 @@ When a SELL Command is executed by the user, the stop limits are cancelled and a
 
 This can be done ONCE or in an iterated LOOP
 
-!BUYNOW:
+**!BUYNOW:**
 
 Calculate the price curve in a given time interval and detect the best BUY moment. STOP LIMITS are set and updated incrementally according to the 
 configured thresholds (%). A SELL can occur automatically via executed stop limits or at a configurable amount gained. 
 
-MODE:
 
-Can be a one iteration trade (ONCE) or multiple trades iterated continuously (LOOP)
+**BUYFAST:**
+
+Similar to BUYNOW but with a faster execution. Does only an initial Stop Limit when a BUY is executed (no incremental stop limit) 
  
 
 # How it Works
@@ -105,22 +106,24 @@ Can be ONCE or in LOOP
 
 BUYNOW (buy coin immediately) or BUYLOW (buy at low price curve) or BUYFAST (faster and simpler execution, ideal for big pumps)
 
-COIN_NAME_TO_TRADE:
+**COIN_NAME_TO_TRADE:**
 
 Coin pair to trade, with the following syntax %TokenName%%TradingPair% (ex. SNMUSDT)
 
-MAX_AMOUNT_BUY:
+**MAX_AMOUNT_BUY:**
 
 Amount you want to spend for the current trande (according to the token trading pair you choose (Ex. 1000 USDT)
 
-STOP_LIMIT_SELL_THRESHOLD_PARAM:
+**STOP_LIMIT_SELL_THRESHOLD_PARAM:**
 
-STOP_LIMIT_INCREASE_PERC_PARAM:
+**STOP_LIMIT_INCREASE_PERC_PARAM:**
 
-TIME_INTERVAL_SLEEP:
+**TIME_INTERVAL_SLEEP:**
 
-GAIN_AMOUNT_THRESHOLD:
+**GAIN_AMOUNT_THRESHOLD:**
 
+
+**Internal Script parameter:**
 OPERATIONAL_MODE = True # True == real Trade  | False == Test mode
 LOG_MODE = False # True == log to log files
 
