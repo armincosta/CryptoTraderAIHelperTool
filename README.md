@@ -92,14 +92,16 @@ Dependencies:
  
 # Run Parameter Syntax
 
-The following parameters can be set according to your strategy
+
+The following parameters can be set according to your trading strategy
 
 
-MODE: 
+**MODE:** 
 
 Can be ONCE or in LOOP
 
-BUYPARAM:
+
+**BUYPARAM:**
 
 BUYNOW (buy coin immediately) or BUYLOW (buy at low price curve) or BUYFAST (faster and simpler execution, ideal for big pumps)
 
