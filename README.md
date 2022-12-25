@@ -40,16 +40,16 @@ Contact: SEE Solutions e-mail: info@seesolutions.it
 
  Helper Tool software that aims to be useful for aiding trading on Binance Crypto Exchange.
 
- It's particularly useful in case of small and big pumps or longer price increase time periods. If you
+ It's particularly useful in case of small and big pumps or longer price increase time periods. 
 
- catch the momentum with the proper configurations you may lean back and see your $ growing without 
+ If you catch the momentum with the proper configurations you may lean back and see your $ growing without 
 
  caring too much.
  
 
 # Description
  
-This small crypto trading helper Tool set comes with some functionalities for improving and supporting your trading activity. It consists of python code scripts that can be run in a commandd shell with defined configurable parameters. The tool allows to make BUYs and SELLs in automatic way while constantly monitoring the price. Stop Limits for SELLs are automatically set and are incremental according to growing or downing price levels. It simplyfies buying and selling your favorite crypto token. It is very helpful in cases of big and instant price increases or constant slow price increases over longer time periods.
+This small crypto trading helper Tool comes with some functionalities for improving and supporting your trading activity. It consists of python code scripts that can be run in a commandd shell with defined configurable parameters. The tool allows to make BUYs and SELLs in automatic way while constantly monitoring the price. Stop Limits for SELLs are automatically set and are incremental according to growing or downing price levels. It simplyfies buying and selling your favorite crypto token. It is very helpful in cases of big and instant price increases or constant slow price increases over longer time periods.
  
 # Functionalities
 
