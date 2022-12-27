@@ -55,13 +55,14 @@ from binance import ThreadedWebsocketManager
 from binance import AsyncClient
 from binance.enums import *
 #from binance.websockets import BinanceSocketManager 
-from pricechange import *
 from Helper import *
-from pricegroup import *
+
 
 
 #######################################################################################
 # User parameters that are passed when the code is executed (defaults are overwritten)
+#
+# PARAMETERS:
 MODE = "LOOP" # ONCE or LOOP
 BUY_NOW_PARAM = False # BUYNOW (buy coin immediately) or BUYLOW (buy at low price curve) or BUYFAST (faster and simpler execution, ideal for big pumps)
 COIN_NAME_TO_TRADE = "Null"
@@ -70,6 +71,7 @@ STOP_LIMIT_SELL_THRESHOLD_PARAM = "1.0"
 STOP_LIMIT_INCREASE_PERC_PARAM = "2.5"
 TIME_INTERVAL_SLEEP = 1
 GAIN_AMOUNT_THRESHOLD = 100.0 # 100 $
+
 GAIN_AMOUNT_MIN_THRESHOLD = 3.0
 COIN_PRICE_FLOAT_RESOLUTION = 2
 
