@@ -29,7 +29,8 @@ Software License:
 
 
 
-Contact: SEE Solutions e-mail: info@seesolutions.it
+Contact SEESolutions
+                    e-mail: info@seesolutions.it
 
 
 ####################################################
@@ -89,6 +90,7 @@ Dependencies:
 
 # How to Install
  
+ Just run teh python script from the 'src' folder
 
  
 # Run Parameter Syntax
