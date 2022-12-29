@@ -121,14 +121,16 @@ Example:
 python3.6 detectorTraderAIExecutor.py ONCE BUYFAST %MyToken%BUSD 730 -1 -1 0 30
 ´´´
 
-# Parameter settings
+# Configuration Parameter settings
 
-The following parameters can be set according to your trading strategy or operation mode.
+The following parameters can be set according to your trading strategy or mode of operation.
 
-Syntax:
+**Parameter Syntax:**
  ```
  python detectorTraderAIExecutor.py %MODE% %BUYPARAM% %COIN_NAME_TO_TRADE% %MAX_AMOUNT_BUY% %STOP_LIMIT_SELL_THRESHOLD_PARAM% %STOP_LIMIT_INCREASE_PERC_PARAM% %TIME_INTERVAL_SLEEP% %GAIN_AMOUNT_THRESHOLD%
 ```
+
+**Parameters:**
 
 
 **MODE:** 
@@ -140,13 +142,16 @@ Can be ONCE or in LOOP
 
 BUYNOW (buy coin immediately) or BUYLOW (buy at low price curve) or BUYFAST (faster and simpler execution, ideal for big pumps)
 
+
 **COIN_NAME_TO_TRADE:**
 
 Coin pair to trade, with the following syntax %TokenName%%TradingPair% (ex. SNMUSDT)
 
+
 **MAX_AMOUNT_BUY:**
 
 Amount you want to spend for the current trande (according to the token trading pair you choose (Ex. 1000 USDT)
+
 
 **STOP_LIMIT_SELL_THRESHOLD_PARAM:**
 
@@ -189,18 +194,18 @@ If True the output is logged to log files (logs folder)
 Run a Trade ONCE in BUYFAST MODE on COIN_NAME_TO_TRADE SNMBUSD with the MAX_AMOUNT_BUY of 3000 BUSD with a initial STOP_LIMIT_SELL_THRESHOLD_PARAM set to 3.0 % below the buy price, the Trade monitoring iterates at 0 seconds TIME_INTERVAL_SLEEP (-1 are unused params)
  
 
-Example:
+Example execution:
  
 ```
 python detectorTraderAIExecutor.py ONCE BUYFAST SNMBUSD 3000 3.0 -1 0 -1
 ```
  
-Parameter syntax:
+
+**Parameter Syntax:**
 
 ```
 python detectorTraderAIExecutor.py %MODE% %BUYPARAM% %COIN_NAME_TO_TRADE% %MAX_AMOUNT_BUY% %STOP_LIMIT_SELL_THRESHOLD_PARAM% %STOP_LIMIT_INCREASE_PERC_PARAM% %TIME_INTERVAL_SLEEP% %GAIN_AMOUNT_THRESHOLD%
 ```
-
 
 
 
