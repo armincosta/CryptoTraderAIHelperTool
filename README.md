@@ -98,11 +98,10 @@ Python Version > 3
  
 1) Install Python (version > 3) and the following python packages:
 
-´´´
+```
 pip install numpy
 pip install python-binance
-
-´´´
+```
 
 2) The python code sofware is located in folder "src" that contains also auxiliary folders needed for execution. The scripts must be run from the command shell within the "src" folder.
 
@@ -117,18 +116,18 @@ pip install python-binance
 To run the software just open the command shell or terminal and execute the python script contained in the 'src' folder with the desired parameters.
 
 Example:
-´´´
+```
 python3.6 detectorTraderAIExecutor.py ONCE BUYFAST %MyToken%BUSD 730 -1 -1 0 30
-´´´
+```
 
 # Configuration Parameter settings
 
 The following parameters can be set according to your trading strategy or mode of operation.
 
 **Parameter Syntax:**
- ```
- python detectorTraderAIExecutor.py %MODE% %BUYPARAM% %COIN_NAME_TO_TRADE% %MAX_AMOUNT_BUY% %STOP_LIMIT_SELL_THRESHOLD_PARAM% %STOP_LIMIT_INCREASE_PERC_PARAM% %TIME_INTERVAL_SLEEP% %GAIN_AMOUNT_THRESHOLD%
-```
+ 
+ python detectorTraderAIExecutor.py **MODE BUYPARAM COIN_NAME_TO_TRADE MAX_AMOUNT_BUY STOP_LIMIT_SELL_THRESHOLD_PARAM STOP_LIMIT_INCREASE_PERC_PARAM TIME_INTERVAL_SLEEP GAIN_AMOUNT_THRESHOLD**
+
 
 **Parameters:**
 
@@ -145,7 +144,7 @@ BUYNOW (buy coin immediately) or BUYLOW (buy at low price curve) or BUYFAST (fas
 
 **COIN_NAME_TO_TRADE:**
 
-Coin pair to trade, with the following syntax %TokenName%%TradingPair% (ex. SNMUSDT)
+üüüCoin pair to trade, with the following syntax %TokenName%%TradingPair% (ex. SNMUSDT)
 
 
 **MAX_AMOUNT_BUY:**
@@ -201,20 +200,12 @@ python detectorTraderAIExecutor.py ONCE BUYFAST SNMBUSD 3000 3.0 -1 0 -1
 ```
  
 
-**Parameter Syntax:**
-
-```
-python detectorTraderAIExecutor.py %MODE% %BUYPARAM% %COIN_NAME_TO_TRADE% %MAX_AMOUNT_BUY% %STOP_LIMIT_SELL_THRESHOLD_PARAM% %STOP_LIMIT_INCREASE_PERC_PARAM% %TIME_INTERVAL_SLEEP% %GAIN_AMOUNT_THRESHOLD%
-```
-
-
-
+# Contribution and further developments
 
 Contribution for new and enhanced functionalities:
 
 Your free and precious contribution for further development of this Tool IF you like it and use it:
  
-
  If you find this trading utility Tool helpful to gain some nice $%$ profit$ while doing your trades and want to contribute to further development, improvements and fixes, please feel FREE to send some tiny amount of crypto you gained with this tool to one of these addresses:
  
  
@@ -229,7 +220,7 @@ Your free and precious contribution for further development of this Tool IF you 
  USDT (Ethereum ERC20): 0x35372ea66892ed35109fb381caa88b7fed75e4b2
  
  
- THANKS a LOT and God beless you, you will not regret for getting further improvements and functionalities for your Trades
+ THANKS a LOT, you will not regret for getting further improvements and functionalities for your Trades
  
 
  
