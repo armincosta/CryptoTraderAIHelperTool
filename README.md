@@ -53,9 +53,9 @@
 
 # Description
  
-This small crypto trading helper Tool comes with some functionalities for supporting your trading activity. It consists of python code scripts that can be run in a commandd shell with defined configurable parameters. The tool allows to make BUYs and SELLs in semi-automatic way while constantly monitoring the price. Stop Limits for SELLs are automatically set and are incremental according to growing or downing price levels. It simplyfies buying and selling your favorite crypto token. It is very useful in cases of big and instant price increases or constant slow price increases over longer time periods.
+This small crypto trading helper Tool comes with some functionalities for supporting your trading activity. It consists of python code scripts that can be run in a commandd shell with defined configurable parameters. The tool allows to make BUYs and SELLs in semi-automatic way while constantly monitoring the token price. Stop Limits for SELLs are automatically set and are incremental according to growing or downing price levels. It simplyfies buying and selling your favorite crypto token. It is very useful in cases of big and instant price increases or constant slow price increases over longer time periods.
  
-# Functionalities
+# Functionalities (MODE)
 
 **BUYNOW:**
 
@@ -76,7 +76,9 @@ configured thresholds expressed in percentage (%) of the buy price.
 
 **BUYFAST:**
 
-Similar to BUYNOW but with a faster execution. Does only an initial Stop Limit order when a BUY is executed (no automatic incremental stop limits) 
+Similar to BUYNOW but with a faster execution. Does only an initial Stop Limit order when a BUY is executed (no automatic incremental stop limits)
+
+This mode also allows also to make a fast BUY when a token is going to be listed for the first time. In this case the token availability is constantly monitored and as soon the token becomes available for trading the current price is shown. The user may than trigger a buy by issuing a BUY command (touch ./cmds/buy). NOTE: By default the ./cmds/buy command is active, so you have to remove this file if you want to poll the token price and you preffer to issue the BUY command manually.
  
 
 # How it Works
@@ -136,6 +138,10 @@ The following parameters can be set according to your trading strategy or mode o
 
 Can be ONCE or in LOOP
 
+ONCE -> The trade iteration is executed only once and finishes when the trade exits
+
+LOOP -> The trade iteration is reiterated and starts a new trade when the starting trade finishes
+
 
 **BUYPARAM:**
 
@@ -144,7 +150,7 @@ BUYNOW (buy coin immediately) or BUYLOW (buy at low price curve) or BUYFAST (fas
 
 **COIN_NAME_TO_TRADE:**
 
-üüüCoin pair to trade, with the following syntax %TokenName%%TradingPair% (ex. SNMUSDT)
+Coin pair to trade, with the following syntax %TokenName%%TradingPair% (ex. SNMUSDT)
 
 
 **MAX_AMOUNT_BUY:**
