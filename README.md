@@ -44,7 +44,7 @@
 
  Helper Tool software that aims to be useful for aiding trading on Binance Crypto Exchange.
 
- It's particularly useful in case of small and big pumps or longer price increase time periods. 
+ It's may be useful in case of small and big pumps or longer price increase time periods. 
 
  If you catch the momentum with the proper parameter configurations you may lean back and see your 
 
@@ -145,7 +145,7 @@ LOOP -> The trade iteration is reiterated and starts a new trade when the starti
 
 **BUYPARAM:**
 
-BUYNOW (buy coin immediately) or BUYLOW (buy at low price curve) or BUYFAST (faster and simpler execution, ideal for big pumps)
+BUYNOW (buy coin immediately) or NOTBUYNOW (buy at low price curve) or BUYFAST (faster and simpler execution, ideal for big pumps)
 
 
 **COIN_NAME_TO_TRADE:**
