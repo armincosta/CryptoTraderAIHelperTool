@@ -205,10 +205,19 @@ Example execution:
 python detectorTraderAIExecutor.py ONCE BUYFAST SNMBUSD 3000 3.0 -1 0 -1
 ```
  
+# HowTo
+
+**Execute a SELL command manually**
+
+Create an empty file named "sell" in the folder "cmds" (example: ./cmds/sell ). 
+In linux/unix/MacOS environment you may use the following command:
+
+```
+touch ./cmds/sell
+```
 
 # Contribution and further developments
 
-Contribution for new and enhanced functionalities:
 
 Your free and precious contribution for further development of this Tool IF you like it and use it:
  
@@ -237,7 +246,6 @@ Your free and precious contribution for further development of this Tool IF you 
          /_\
  
  
-Your Phoenix
 A.C
 
 
