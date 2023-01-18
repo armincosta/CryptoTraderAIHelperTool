@@ -129,7 +129,8 @@ For example if you set a too tight stop limit increase threshold, it's likely th
 
 To run the software just open the command shell or terminal and execute the python script contained in the 'src' folder with the desired parameters.
 
-Run Trade Example:
+
+Run a Trade Example:
 
 Run a BUY trade with mode BUYFAST, on token %MyToken% with 730 BUSD . No initial STOP LIMIT setting (-1). The polling timing interval is set to 0 seconds (optimal for fast actions). Trigger an automatic SELL wehn the amount gained reaches 30 BUSD.
 
