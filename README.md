@@ -115,6 +115,7 @@ pip install python-binance
 The auxiliary folders are:
 - logs: contain the log files of the trades)
 - GAINS: contain a "GAINS.csv" file with the listed gains or losses of the trades executed
+- cmds: commands can be executed by creating an empty file in this folder with the named command to be executed (ex. buy, sell, etc..). The program will detect these files and act accordingly.
 
  
 # How to Run the software
