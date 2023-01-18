@@ -46,14 +46,21 @@
 
  It's may be particularly useful in cases of small and big pumps or price increases over longer time periods. 
 
- If you catch the momentum with the proper configuration parameters, you may stay more relaxed while doing your trades.
+ If you catch the right momentum in a trade with the proper configuration parameters, you may stay more relaxed while the market rumbles.
  
 
 # Description
  
-This small crypto trading helper Tool comes with some functionalities for supporting your trading activity. It consists of python code scripts that can be run in a commandd shell with defined configurable parameters. The tool allows to make BUYs and SELLs in semi-automatic way while constantly monitoring the token price. Stop Limits for SELLs are automatically set and are incremental according to growing or downing price levels. It simplyfies buying and selling your favorite crypto token. It is very useful in cases of big and instant price increases or constant slow price increases over longer time periods.
+This small crypto trading helper Tool comes with some functionalities for supporting your trading activity. It consists of some python code scripts that can be run in a commmon command shell available on Windows, MacOS and Linux. The program can be parameterized with configurable parameters and has different modes of operation. The tool allows to make BUYs and SELLs in semi-automatic way while constantly monitoring a token price. Stop Limits for SELLs are automatically set and are incremental according to growing or downing price levels. It simplyfies to some extend buying and selling your favorite crypto token. It is very useful in cases of big and instant price increases or constant slow price increases over longer time periods. Version 1.0 is just the first draft of this crypto trading utility, very interesting features will follow soon that will allow complex automatic AI decision trades. 
+This software will at some point be able to automatically detect trading activities on the crypto markets and forcast possible trades that deliver gains. In particular this tool will also detect initial bit coin Pumps that can deliver significant gains.
+
  
-# Functionalities (MODE)
+# Features (MODEs)
+
+The software implements different modes of operation depending on the type of trade the user wants to make. More such modes will follow with future versions of the CryptoTraderAIHelperTool.
+
+Currently the CryptoTraderAIHelperTool V1.0 supports the following modes:
+
 
 **BUYNOW:**
 
@@ -68,28 +75,28 @@ This operations can be performed in two modes, ONCE or in a constant iterated LO
 
 **NOTBUYNOW:** (experimental)
 
-Calculate the price curve in a given time interval and detect the best BUY moment. STOP LIMITS orders are set and updated incrementally according to the 
-configured thresholds expressed in percentage (%) of the buy price.
+Calculate the price curve in a given time interval and detect the best BUY moment (ascending curve). STOP LIMIT orders are set and updated incrementally according to the 
+configured thresholds (STOP_LIMIT_SELL_THRESHOLD_PARAM) expressed in percentage (%) relative to the buy price.
 
 
 **BUYFAST:**
 
-Similar to BUYNOW but with a faster execution. Does only an initial Stop Limit order when a BUY is executed (no automatic incremental stop limits)
+Similar to BUYNOW but with a faster execution. Sets only an initial Stop Limit order when a BUY is executed. In this mode there is NO automatic incremental STOP LIMIT orders)
 
 This mode also allows also to make a fast BUY when a token is going to be listed for the first time. In this case the token availability is constantly monitored and as soon the token becomes available for trading the current price is shown. The user may than trigger a buy by issuing a BUY command (touch ./cmds/buy). NOTE: By default the ./cmds/buy command is active, so you have to remove this file if you want to poll the token price and you preffer to issue the BUY command manually.
  
 
 # How it Works
 
-When a trade is executed (BUY), the price is monitored continuously at a given time interval defined by the user.
-STOP LIMIT SELL orders are set and incremented or decremented automatically according to configurable
-thresholds expressed in percentage (%) of the price level 
+When a trade is executed (BUY), the token price is monitored continuously at a given time interval defined by the user.
+STOP LIMIT SELL orders are set (STOP_LIMIT_SELL_THRESHOLD_PARAM) and incremented or decremented automatically according to configurable thresholds (STOP_LIMIT_INCREASE_PERC_PARAM) expressed in percentage (%) relative to the price level.
  
+
 # Prerequisites:
 
 Python Version > 3
 
-**Library Dependencies:**
+**Python Library Dependencies:**
 - numpy
 - Python Binance API (ttps://github.com/sammchardy/python-binance)
 
@@ -105,26 +112,33 @@ pip install python-binance
 
 2) The python code sofware is located in folder "src" that contains also auxiliary folders needed for execution. The scripts must be run from the command shell within the "src" folder.
 
+The auxiliary folders are:
+- logs: contain the log files of the trades)
+- GAINS: contain a "GAINS.csv" file with the listed gains or losses of the trades executed
 
  
 # How to Run the software
 
 1) Choose the MODE of execution for your trade (see MODE parameter)
 
-2) Define the proper parameters for the crypto token you want to trade. NOTE: Each Token might have individual parameter settings according to market conditions (volume, speed, price jumps, etc....). For example if you set a too tight stop limit increase threshold, it's likely that your stop limit orders are executed immediately if the price makes instant jumps (this happens frequently in the initial momentum when a token starts to be traded actively, especially if the trade volume is low initially.
+2) Define the proper parameters for the crypto token you want to trade. 
+
+NOTE: Each Token might have individual parameter settings according to market conditions (volume, speed, price jumps, etc....). 
+For example if you set a too tight stop limit increase threshold, it's likely that your stop limit orders are executed immediately if the price makes instant jumps (this happens frequently in the initial momentum when a token starts to be traded actively, especially if the trade volume is low initially.
 
 To run the software just open the command shell or terminal and execute the python script contained in the 'src' folder with the desired parameters.
 
-Example:
+Run Trade Example:
 
-Run a BUY trade with mode BUYFAST, on token %MyToken% with 730 BUSD . No initial STOP LIMIT setting (-1). Polling timing interval set to 0 seconds. Trigger an automatic SELL wehn the amount gained reaches 
+Run a BUY trade with mode BUYFAST, on token %MyToken% with 730 BUSD . No initial STOP LIMIT setting (-1). The polling timing interval is set to 0 seconds (optimal for fast actions). Trigger an automatic SELL wehn the amount gained reaches 30 BUSD.
+
 ```
 python3.6 detectorTraderAIExecutor.py ONCE BUYFAST %MyToken%BUSD 730 -1 -1 0 30
 ```
 
-# Configuration Parameter settings
+# Configuration Parameters
 
-The following parameters can be set according to your trading strategy or mode of operation.
+The following parameters can be set according to your trading strategy or MODE of operation.
 
 **Parameter Syntax:**
  
@@ -175,7 +189,8 @@ This parameter allows to set the time interval (in seconds) between one monitori
 Amount of gain relative to your investment, where you want to force a SELL. If positive (+) it's a gain $, if negative (-) it's the affordable loss you want to take if the price dumps fast.
 
 
-# Internal parameters:
+# Internal program parameters (to be edited in the scripts):
+
 
 **OPERATIONAL_MODE** 
 
