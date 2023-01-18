@@ -4,7 +4,7 @@
                                       
            CryptoTraderAIHelperTool V1.0
                                         
-   A tiny helpful Crypto Trading utility Tool
+         A tiny Crypto Trading utility Tool
    
 
 ####################################################
@@ -42,13 +42,11 @@
 
 # Intro
 
- Helper Tool software that aims to be useful for aiding trading on Binance Crypto Exchange.
+ This source code repository provides some software tools that aim to be useful for supporting the trading of crypto tokens on the Binance Crypto Exchange.
 
- It's may be useful in case of small and big pumps or longer price increase time periods. 
+ It's may be particularly useful in cases of small and big pumps or price increases over longer time periods. 
 
- If you catch the momentum with the proper parameter configurations you may lean back and see your 
-
- $ growing without caring too much.
+ If you catch the momentum with the proper configuration parameters, you may stay more relaxed while doing your trades.
  
 
 # Description
@@ -118,6 +116,8 @@ pip install python-binance
 To run the software just open the command shell or terminal and execute the python script contained in the 'src' folder with the desired parameters.
 
 Example:
+
+Run a BUY trade with mode BUYFAST, on token %MyToken% with 730 BUSD . No initial STOP LIMIT setting (-1). Polling timing interval set to 0 seconds. Trigger an automatic SELL wehn the amount gained reaches 
 ```
 python3.6 detectorTraderAIExecutor.py ONCE BUYFAST %MyToken%BUSD 730 -1 -1 0 30
 ```
