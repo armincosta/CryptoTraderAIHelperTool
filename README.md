@@ -55,7 +55,7 @@ This small crypto trading helper Tool comes with some functionalities for suppor
 This software will at some point be able to automatically detect trading activities on the crypto markets and forcast possible trades that deliver gains. In particular this tool will also detect initial bit coin Pumps that can deliver significant gains.
 
  
-# Features (MODEs)
+# Features (MODEs of operation)
 
 The software implements different modes of operation depending on the type of trade the user wants to make. More such modes will follow with future versions of the CryptoTraderAIHelperTool.
 
