@@ -62,10 +62,11 @@ This software will at some point be able to automatically detect trading activit
 
 # How it Works
 
-The Toolset provides a set of operations (MODEs) that allow to perform BUYs and SELLs of a defined crypto token in semi-automatic by executing the program with defined parameters.
-When a trade operation is executed (BUY), the token price is monitored continuously at a given time interval defined by the user (ex. each second). A STOP LIMIT SELL order, if configured, is set immediately after the buy operation and incremented or decremented automatically according to a second configurable threshold expressed in percentage (%) relative to the price level. The user can execute a SELL command manually when a desired gain is reached. 
+The Toolset provides to run a set of operations (MODEs) that allow to trade of a particular crypto token (BUYs and SELLs), in semi-automatic way by executing the program with defined parameters.
 
-A SELL can occur either automatically, via an executed stop limit order, at a configurable amount gained (%) or at any moment by the user by executing a sell command.
+When a trade operation is executed (i.e. BUYNOW), the token price is monitored continuously at a given time interval defined by the user (i.e each second). Immediately after the BUY operation is executed, a user defined STOP LIMIT SELL order is set and incremented or decremented automatically according to a configurable threshold value expressed in percentage (%), that is relative to the price level.
+
+A SELL order can occur either automatically, via an executed stop limit order, at a configurable amount gained (%) or at any moment by the user by executing a sell command.
 
 One feature (MODE) allows also to poll (check continuously) the availability of a new token that is going to be listed on the Exchange and  perform a BUY operation at a the lowest possible price level.
 
@@ -254,26 +255,22 @@ In linux/unix/MacOS environment you may use the following command:
 touch ./cmds/sell
 ```
 
-# Contribution and further developments
+
+# Free Contribution and further developments
 
 
-Your free and precious contribution for further development of this Tool IF you like it and use it:
+Your free and precious contribution for further development of this Tool IF you like it and use it is very appreciated:
  
  If you find this trading utility Tool helpful to gain some nice $%$ profit$ while doing your trades and want to contribute to further development, improvements and fixes, please feel FREE to send some tiny amount of crypto you gained with this tool to one of these addresses:
  
  
- BUSD (BNB smart chain BEP20): 0x35372ea66892ed35109fb381caa88b7fed75e4b2
- 
- BTC (Bitcoin):          1K1PHeqiUFoQ6Yp8mNP6u2sZR7R23QnffQ
- 
- ETH (Ethereum ERC20):   0x35372ea66892ed35109fb381caa88b7fed75e4b2
- 
- BNB (BNB smart chain BEP20):        0x35372ea66892ed35109fb381caa88b7fed75e4b2
- 
- USDT (Ethereum ERC20): 0x35372ea66892ed35109fb381caa88b7fed75e4b2
+ BTC (Bitcoin):          bc1q7fpjscwe3la7790nwfjw2z723zr8zg0mxu6w0e
+
+ BUSD (BNB smart chain BEP20): 0x1D6047820F00dE49a7Eb7B57E8cd58EF034324D5
+
  
  
- THANKS a LOT, you will not regret for getting further improvements and functionalities for your Trades
+ Thank you for using and supporting the CryptoTraderAIHelperTool
  
 
  
