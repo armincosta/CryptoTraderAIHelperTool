@@ -42,47 +42,45 @@
 
 # Intro
 
- This source code repository provides some software tools that aim to be useful for supporting the trading of crypto tokens on the Binance Crypto Exchange.
-
- It's may be particularly useful in cases of small and big pumps or price increases over longer time periods. 
+ This source code repository provides some software tools that are useful for supporting the trading of crypto assets on the Binance Crypto Exchange.
 
  If you catch the right momentum in a trade with the proper configuration parameters, you may stay more relaxed while the market rumbles.
  
 
 # Description
  
-This tiny crypto trading helper Tool comes with some functionalities for supporting the crypto trading activity. It consists of some python code scripts that can be run in a commmon command shell available on Windows, MacOS and Linux.
+This tiny crypto trading helper Tool comes with some functionalities for supporting the crypto trading activity. It consists of python code scripts that can be run in a commmon command shell available on Windows, MacOS and Linux.
 
 The program can be parameterized with configurable parameters and has different MODEs of operation. The tool allows to make BUYs and SELLs in semi-automatic way while constantly monitoring a token price. Stop Limit orders for SELLs are automatically set and are incremental according to growing or downing price levels. It simplyfies to some extend buying and selling your favorite crypto token.
 
-It is very useful in cases of big and instant price increases or constant slow price increases over longer time periods. Version 1.0 is just the first draft of this crypto trading utility, interesting features will follow soon that will allow complex automatic AI decision trades. 
+It is very useful in cases of big and instant price increases or constant slow price increases over longer time periods. Version 1.0 is just the first release of this crypto trading utility, interesting features that will make complex automatic AI driven trades will follow.
 
-This software will at some point be able to automatically detect trading activities on the crypto market and forcast possible trades that deliver gains. In particular this tool will also detect initial big price pumps that can deliver significant gains.
+This software will at some point be able to automatically detect the trading activities on the crypto market and forcast possible trades that deliver gains. In particular this tool will also detect early big price pumps that can deliver significant gains.
 
 
 # How it Works
 
-The Toolset allows to run a set of operations (MODEs) to trade of a particular crypto token (BUYs and SELLs), in semi-automatic way by executing the program with user defined parameters.
+The Toolset allows to run a set of operations (MODEs) to trade crypto assets (BUYs and SELLs) in semi-automatic way by executing the program with user defined parameters.
 
-When a trade operation is executed (i.e. BUYNOW), the token price is monitored continuously at a given time interval defined by the user (i.e each second). Immediately after the BUY operation is executed, a user defined STOP LIMIT SELL order is set and incremented or decremented automatically according to a configurable threshold value expressed in percentage (%), that is relative to the price level.
+When a trade operation is executed (i.e. BUYNOW), the token price is monitored continuously at a given time interval defined by the user (i.e each second). Immediately after the BUY operation is executed, a STOP LIMIT SELL orer is set and incremented or decremented automatically according to a configurable threshold value expressed in percentage (%) that is relative to the price level.
 
-A SELL order can occur either automatically, via an executed stop limit order, at a configurable amount gained (%) or at any moment by the user by executing a sell command.
+A SELL order can occur either automatically, via an executed stop limit order, at a desired amount gained (%) or at any moment by the user by executing a sell command.
 
-One feature (MODE) allows also to poll (check continuously) the availability of a new token that is going to be listed on the Exchange and  perform a BUY operation at a the lowest possible price level.
+One of the operation (MODE) allows also to poll (check continuously) the availability of a new crypto asset that is going to be listed on the Exchange and  perform a BUY operation as soon as the trading is open at a the lowest possible price level.
 
  
 # Features (MODEs of operation)
 
-The software has different modes (MODES) of operation depending on the type of trade the user wants to perform. More features modes of operation will follow in new release versions of the software.
+The software has different modes (MODES) of operation depending on the type of trade the user wants to perform. More features (modes of operation) will follow in new release versions of the software.
 
 Currently the CryptoTraderAIHelperTool (Version 1.0) supports the following operation MODEs:
 
 
 **BUYNOW:**
 
-Make an instant BUY and set a starting STOP LIMIT order at a configurable threshold (in percent % relative to the price, see parameter STOP_LIMIT_SELL_THRESHOLD_PARAM) below the price level. As the price increases, the active STOP LIMIT order is incremented according to a second threshold (expressed in %). When the token price increases by at least 2 times the increase threshold, the active STOP LIMIT orders are incremented by the defined threshold (STOP_LIMIT_INCREASE_PERC_PARAM) .    
+Make an instant BUY and set a starting STOP LIMIT order at a configurable threshold below the price level (expressed in percent % relative to the price, see parameter STOP_LIMIT_SELL_THRESHOLD_PARAM). As the price increases, the active STOP LIMIT order is incremented according to a second threshold (expressed in %). When the token price increases by at least 2 times the increase threshold, the active STOP LIMIT orders are incremented by the defined threshold (STOP_LIMIT_INCREASE_PERC_PARAM) .    
 
-The software monitors constantly the price and as the price level increases or decreases it adjusts the configured STOP LIMIT orders according to the threshold parameter..
+The software monitors constantly the price and as the price level increases or decreases it adjusts the configured STOP LIMIT orders according to the threshold parameters.
 
 When a SELL Command is executed, either by the user or automatically with an active order, the active stop limits orders are cancelled and a SELL at market price or at the desired price is executed.
 
