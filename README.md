@@ -62,7 +62,7 @@ This software will at some point be able to automatically detect trading activit
 
 # How it Works
 
-The Toolset provides to run a set of operations (MODEs) that allow to trade of a particular crypto token (BUYs and SELLs), in semi-automatic way by executing the program with defined parameters.
+The Toolset allows to run a set of operations (MODEs) to trade of a particular crypto token (BUYs and SELLs), in semi-automatic way by executing the program with user defined parameters.
 
 When a trade operation is executed (i.e. BUYNOW), the token price is monitored continuously at a given time interval defined by the user (i.e each second). Immediately after the BUY operation is executed, a user defined STOP LIMIT SELL order is set and incremented or decremented automatically according to a configurable threshold value expressed in percentage (%), that is relative to the price level.
 
@@ -73,7 +73,7 @@ One feature (MODE) allows also to poll (check continuously) the availability of 
  
 # Features (MODEs of operation)
 
-The software has different modes (MODES)of operation depending on the type of trade the user wants to perform. More features modes of operation will follow in new release versions of the software.
+The software has different modes (MODES) of operation depending on the type of trade the user wants to perform. More features modes of operation will follow in new release versions of the software.
 
 Currently the CryptoTraderAIHelperTool (Version 1.0) supports the following operation MODEs:
 
