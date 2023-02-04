@@ -100,7 +100,7 @@ A price curve is calculated in a given time interval and the program tries to de
 
 **BUYFAST:**
 
-Similar to BUYNOW but with a faster execution. Sets only an initial Stop Limit order, if configured, when a BUY is executed. In this mode there are NO automatic incremental STOP LIMIT orders.
+Similar to the mode BUYNOW but with a faster execution. Sets only an initial Stop Limit order, if configured, when a BUY is executed. In this mode there are NO automatic incremental STOP LIMIT orders.
 
 This mode also allows also to make a fast BUY when a token is going to be listed for the first time. In this case the token availability is constantly monitored and as soon the token becomes available for trading the current price is shown. The user may than trigger a buy by issuing a BUY command (touch ./cmds/buy). NOTE: By default the ./cmds/buy command is active, so you have to remove this file if you want to poll the token price and you preffer to issue the BUY command manually.
  
