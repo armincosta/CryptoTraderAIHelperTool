@@ -242,11 +242,33 @@ python detectorTraderAIExecutor.py ONCE BUYFAST SNMBUSD 3000 3.0 -1 0 -1
 ```
 
  
-# HowTo
+# User COMMANDS
 
-**Execute a SELL command manually**
+User commands are available for executing given operations for example to BUY, SELL or set STOPLIMIT orders.
 
-Create an empty file named "sell" in the folder "cmds" (example: ./cmds/sell ). 
+A command can be issued by the user anytime by creating a command named file in the "cmds" folder (i.e Sell command: ./cmds/sell). This is simply an empty file with the filename that corresponds to the command name. Whenever the commands is excuted the file is removed automatically.
+
+In linux/unix/MacOS environment you may use the following sintax:
+
+```
+touch ./cmds/name_of_command
+```
+
+
+**Execute a SELL command**
+
+A SELL operation can be triggered anytime by the user by executing the following command.
+
+```
+./cmds/sell
+```
+
+**Set a STOPLIMIT command**
+
+A new STOPLIMIT order can be re-set anytime by executing thie following command. The preview STOPLIMIT order is cancelled and reset to a new STOPLIMIT order with a threshold (parameter: STOP_LIMIT_SELL_THRESHOLD_PARAM) expressed in % below the current price level
+
+Create an empty file named "sell" in the folder "cmds" (example: ./cmds/stoplimit ). 
+
 In linux/unix/MacOS environment you may use the following command:
 
 ```
@@ -280,5 +302,6 @@ Your free and precious contribution for further development of this Tool IF you 
  
  
 A.C
+SEESolutions.it
 
 
