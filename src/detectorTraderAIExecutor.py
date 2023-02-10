@@ -25,12 +25,16 @@
 ####################################################################################################
 #
 # Python source code file: detectorTraderAIExecutor.py
+# GITHUB repository: https://github.com/armincosta/CryptoTraderAIHelperTool
 #
 #  Description:
 #
 #  CryptoTraderAIHelperTool software is a tiny Toolset that aims to be useful for trading crypto assets on Binance Exchange.
-#  It provides a set of functionalities to support the trading activity.
+#  It provides a set of functionalities to support the trading activity. 
 #  Particularly useful for big instant price increases and price increases over longer time spans.
+
+#  The usage documentation is available in the READMED.md file of this repository (https://github.com/armincosta/CryptoTraderAIHelperTool/)
+#
 # 
 #  If you find this Tool helpful and want to contribute to further improvements and functionalities, please feel free to send
 #  some bucks to one of these crypto addresses:
@@ -989,7 +993,7 @@ if __name__ == '__main__':
         print(" copyright(c) 2022 - 2025                         ")       
         print("")
         print("")
-        print(" Author: A.Costa (e-mail: armincostaAThotmail)    ")
+        print(" Author: A.Costa (e-mail: armincostaAThotmail.com)")
         print("")
         print(" License:                                         ")
         print(" CreativeCommons (CC BY-SA Attribution-ShareAlike ")
