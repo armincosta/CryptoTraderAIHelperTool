@@ -155,10 +155,10 @@ python3.6 detectorTraderAIExecutor.py ONCE BUYFAST %MyToken%BUSD 730 -1 -1 0 30
 
 **Run a Trade with MODE(BUYNOW):**
 
-Run a BUY trade with mode BUYNOW, on token %MyToken% with an amount of 730 BUSD . Set and initial STOP LIMIT order with a threshold of 2.5 % below the buy price and increment the STOP LIMIT order by 1.2 % if the price increases twice that threshold(i.e. 2.4 %). The polling timing interval is set to 1 second.
+Run a BUY trade with mode BUYNOW, on token %MyToken% with an amount of 730 BUSD . Set and initial STOP LIMIT order with a threshold of 2.5 % below the buy price and increment the STOP LIMIT order by 1.2 % if the price increases twice that threshold(i.e. 2.4 %). The polling timing interval is set to 1 second. The GAIN_AMOUNT_THRESHOLD is unused (-1)
 
 ```
-python3.6 detectorTraderAIExecutor.py ONCE BUYNOW %MyToken%BUSD 730 2.5 1.2 0 -1
+python3.6 detectorTraderAIExecutor.py ONCE BUYNOW %MyToken%BUSD 730 2.5 1.2 1 -1
 ```
 
 
