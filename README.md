@@ -69,7 +69,7 @@ A SELL order can occur either automatically, via an executed stop limit order, a
 One of the operation (MODE) allows also to poll (check continuously) the availability of a new crypto asset that is going to be listed on the Exchange and  perform a BUY operation as soon as the trading is open at a the lowest possible price level.
 
  
-# Features (MODEs of operation)
+# Functionalities (MODEs of operation)
 
 The software has different modes (MODES) of operation depending on the type of trade the user wants to perform. More features (modes of operation) will follow in new release versions of the software.
 
@@ -91,11 +91,6 @@ or
 - in a constant iterated LOOP: program iterates the operation until terminated by user.
 
 
-**BUYLOW:** (experimental)
-
-A price curve is calculated in a given time interval and the program tries to detect the best BUY moment (ascending curve). STOP LIMIT orders are set (STOP_LIMIT_SELL_THRESHOLD_PARAM) and incremented according to the configured thresholds (STOP_LIMIT_SELL_THRESHOLD_PARAM) expressed in percentage (%) relative to the price.
-
-
 **BUYFAST:**
 
 Similar to the mode BUYNOW but with a faster execution. Sets only an initial Stop Limit order, if configured, when a BUY is executed. In this mode there are NO automatic incremental STOP LIMIT orders.
@@ -103,6 +98,11 @@ Similar to the mode BUYNOW but with a faster execution. Sets only an initial Sto
 This mode also allows also to make a fast BUY when a token is going to be listed for the first time. In this case the token availability is constantly monitored and as soon the token becomes available for trading the current price is shown. The user may than trigger a buy by issuing a BUY command (touch ./cmds/buy). NOTE: By default the ./cmds/buy command is active, so you have to remove this file if you want to poll the token price and you preffer to issue the BUY command manually.
  
  
+**BUYLOW:** (experimental)
+
+A price curve is calculated in a given time interval and the program tries to detect the best BUY moment (ascending curve). STOP LIMIT orders are set (STOP_LIMIT_SELL_THRESHOLD_PARAM) and incremented according to the configured thresholds (STOP_LIMIT_SELL_THRESHOLD_PARAM) expressed in percentage (%) relative to the price.
+
+
 # Prerequisites:
 
 Python Version > 3
@@ -121,7 +121,7 @@ pip install numpy
 pip install python-binance
 ```
 
-2) The python code sofware is located in folder "src" that contains also auxiliary folders needed for execution. The scripts must be run from the a command shell within the "src" folder.
+2) The python scripts are located in folder "src" that contains also auxiliary folders needed for execution. The scripts must be run from the a command shell within the "src" folder.
 
 The auxiliary folders are:
 - logs: contain the log files of the trades
@@ -141,8 +141,11 @@ For example if you set a too tight stop limit increase threshold, it's likely th
 
 To run the software just open the command shell or terminal and execute the python script contained in the 'src' folder with the desired parameters.
 
+If you want to simulate the Trades in Test mode you need to edit the corresponging (see section: Internal program parameters"
 
-Run a Trade with MODE(BUYFAST) Example:
+## Examples:
+
+**Run a Trade with MODE(BUYFAST):**
 
 Run a BUY trade with mode BUYFAST, on token %MyToken% with an amount of 730 BUSD . No initial STOP LIMIT setting (-1). The polling timing interval is set to 0 seconds (optimal for fast actions). Trigger a SELL automatically when the amount gained reaches 30 BUSD.
 
@@ -150,16 +153,26 @@ Run a BUY trade with mode BUYFAST, on token %MyToken% with an amount of 730 BUSD
 python3.6 detectorTraderAIExecutor.py ONCE BUYFAST %MyToken%BUSD 730 -1 -1 0 30
 ```
 
+**Run a Trade with MODE(BUYNOW):**
+
+Run a BUY trade with mode BUYNOW, on token %MyToken% with an amount of 730 BUSD . Set and initial STOP LIMIT order with a threshold of 2.5 % below the buy price and increment the STOP LIMIT order by 1.2 % if the price increases twice that threshold(i.e. 2.4 %). The polling timing interval is set to 1 second.
+
+```
+python3.6 detectorTraderAIExecutor.py ONCE BUYNOW %MyToken%BUSD 730 2.5 1.2 0 -1
+```
+
+
 # Configuration Parameters
 
-The following parameters can be set according to your trading strategy or MODE of operation.
+The following parameters can be set according to your trading strategy and MODE of operation.
 
 **Parameter Syntax:**
  
  python detectorTraderAIExecutor.py **MODE BUYPARAM COIN_NAME_TO_TRADE MAX_AMOUNT_BUY STOP_LIMIT_SELL_THRESHOLD_PARAM STOP_LIMIT_INCREASE_PERC_PARAM TIME_INTERVAL_SLEEP GAIN_AMOUNT_THRESHOLD**
 
+To disable a parameter (NOT Used) pass the value -1
 
-**Parameters:**
+## Parameters:
 
 
 **MODE:** 
@@ -202,17 +215,13 @@ This parameter allows to set the time interval (in seconds) between one monitori
 
 Amount of gain relative to your investment, where you want to force a SELL. If positive (+) it's a gain $, if negative (-) it's the affordable loss you want to take if the price dumps fast.
 
-**A NULL parameter (not used):**
-
-To pass a NULL parameter use the value -1
-
 
 # Internal program parameters (to be edited in the code):
 
 
 **OPERATIONAL_MODE** 
 
-If True == real Trade 
+If True == real Trade (DEFAULT)
 
 If False == Test mode
 
