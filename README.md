@@ -131,9 +131,12 @@ The auxiliary folders are:
  
 # How to Run the software
 
-1) Choose the MODE of execution for your trade (see MODE parameter)
+1) Generate an API key on your Binance account and enable "Spot trading". 
+   Write both, the API key and the secret key in the file **api_config.json**
 
-2) Define the proper parameters for the crypto token you want to trade (, i.e. TokenPair, Amount, initial stop limit order threshold, etc...)
+2) Choose the MODE of execution for your trade (see MODE parameter)
+
+3) Define the proper parameters for the crypto token you want to trade (, i.e. TokenPair, Amount, initial stop limit order threshold, etc...)
 
 NOTE: Each Token might have individual parameter settings according to market conditions (volume, speed, price jumps, etc....).
 
