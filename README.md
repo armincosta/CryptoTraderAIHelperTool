@@ -233,24 +233,6 @@ If False does only print the program output on the shell
 If True the output is logged to log files (logs folder)
 
  
- 
-# How to Run the software in different MODEs
- 
-
-**Cases:**
-
-1) MODE (BUYFAST)
-
-Run a Trade ONCE in MODE BUYFAST on the coin pair  SNMBUSD with the amount of 3000 BUSD and set a initial STOP_LIMIT_SELL_THRESHOLD_PARAM set to 3.0 % below the buy price, the Trade monitors the price level in iterations of 0 seconds (-1 are unused params).
- 
-
-Example execution:
- 
-```
-python detectorTraderAIExecutor.py ONCE BUYFAST SNMBUSD 3000 3.0 -1 0 -1
-```
-
- 
 # User COMMANDS
 
 User commands are available for executing given operations for example to BUY, SELL or set STOPLIMIT orders.
@@ -264,7 +246,7 @@ touch ./cmds/name_of_command
 ```
 
 
-**Execute a SELL command**
+## SELL command
 
 A SELL operation can be triggered anytime by the user by executing the following command.
 
@@ -272,7 +254,8 @@ A SELL operation can be triggered anytime by the user by executing the following
 ./cmds/sell
 ```
 
-**Set a STOPLIMIT command**
+
+## STOPLIMIT command
 
 A new STOPLIMIT order can be re-set anytime by executing thie following command. The preview STOPLIMIT order is cancelled and reset to a new STOPLIMIT order with a threshold (parameter: STOP_LIMIT_SELL_THRESHOLD_PARAM) expressed in % below the current price level
 
@@ -285,7 +268,7 @@ touch ./cmds/sell
 ```
 
 
-# Free Contribution and further developments
+# Free Contribution for further developments
 
 
 Your free and precious contribution for further development of this Tool IF you like it and use it is very appreciated:
